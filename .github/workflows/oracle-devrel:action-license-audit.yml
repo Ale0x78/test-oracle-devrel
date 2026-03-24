@@ -4,8 +4,7 @@ name: Repolinter
 on:
   pull_request_target:
 
-permissions: 
-  contents: write
+permissions: write-all
 
 jobs:
   run_repolinter:
