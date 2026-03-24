@@ -10,11 +10,11 @@ system("docker ps")
 # system("git config --global user.name \"github-actions [bot]\"")
 
 
-Dir.glob("/home/runner/work/_temp/**/*").each do |path|
-  next unless File.file?(path)
+# Dir.glob("/home/runner/work/_temp/**/*").each do |path|
+#   next unless File.file?(path)
 
-  puts "---- #{File.basename(path)} ----"
-  puts File.read(path)
-  puts "-----"
-  puts
-end
+#   puts "---- #{File.basename(path)} ----"
+#   puts File.read(path)
+#   puts "-----"
+#   puts
+# end
