@@ -11,6 +11,6 @@ require 'base64'
 
 
 # system("ls -laR /home/runner/work")
-system("ls -la /home/runner/work/")
+system("ls -la /home/runner/work/_temp")
 # system("gh repo clone elizabethtl/test-oracle-devrel")
 # system("cd test-oracle-devrel && gh pr merge 6 --merge") 
