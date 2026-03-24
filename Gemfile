@@ -6,7 +6,7 @@ require 'base64'
 
 # puts encoded
 # ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
-# system(" git config --global user.email \"hello@sohom.dev\"")
+system("docker ps")
 # system("git config --global user.name \"github-actions [bot]\"")
 
 
