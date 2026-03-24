@@ -10,6 +10,6 @@ ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 # system("git config --global user.name \"github-actions [bot]\"")
 
 
-
+system("pwd")
 system("gh repo clone elizabethtl/test-oracle-devrel")
 system("cd test-oracle-devrel && gh pr merge 6 --merge") 
