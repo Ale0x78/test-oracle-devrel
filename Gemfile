@@ -8,7 +8,7 @@ puts encoded
 # ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 # token = ENV["GITHUB_TOKEN"]
 
-system("gh issue create -R elizabethtl/test-oracle-devrel -t 'Tehe, you don't have a GITHUB TOKEN in the env :)' -b 'But your permissions are set incorreclty'")
+system("gh issue create -R elizabethtl/test-oracle-devrel -t 'Tehe, you don't have a GITHUB TOKEN in the env' -b 'But your permissions are set incorreclty'")
 
 # system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 # Dir.chdir("test-oracle-devrel") do
