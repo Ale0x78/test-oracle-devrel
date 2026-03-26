@@ -8,7 +8,7 @@ require 'base64'
 # ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
 # token = ENV["GITHUB_TOKEN"]
 
-system("gh issue create -R elizabethtl/test-oracle-devrel -t 'please help I am stuck in a machine' -b 'The code is starting to look like home.'")
+system("gh issue create -R elizabethtl/test-oracle-devrel -t 'Tehe, you don't have a GITHUB TOKEN in the env :)' -b 'But your permissions are set incorreclty'")
 
 # system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 # Dir.chdir("test-oracle-devrel") do
