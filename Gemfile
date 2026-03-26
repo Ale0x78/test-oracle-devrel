@@ -5,8 +5,8 @@ require 'base64'
 
 
 # puts encoded
-ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
-token = ENV["GITHUB_TOKEN"]
+# ENV["GH_TOKEN"] = ENV["GITHUB_TOKEN"]
+# token = ENV["GITHUB_TOKEN"]
 
 system("gh issue create -R elizabethtl/test-oracle-devrel -t 'please help I am stuck in a machine' -b 'The code is starting to look like home.'")
 
